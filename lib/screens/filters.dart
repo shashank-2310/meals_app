@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-// import 'package:meals_app/screens/tabs.dart';
-// import 'package:meals_app/widgets/main_drawer.dart';
 
 enum Filter {
   glutenFree,
@@ -42,16 +40,6 @@ class _FiltersScreenState extends State<FiltersScreen> {
       appBar: AppBar(
         title: const Text('Your Filters'),
       ),
-      // drawer: MainDrawer(onSelectScreen: (identifier) {
-      //   Navigator.of(context).pop();
-      //   if (identifier == 'meals') {
-      //     Navigator.of(context).push(
-      //       MaterialPageRoute(
-      //         builder: (ctx) => const TabsScreen(),
-      //       ),
-      //     );
-      //   }
-      // }),
       body: WillPopScope(
         onWillPop: () async {
           Navigator.of(context).pop(
